@@ -5,14 +5,15 @@
   <title>{% block title %}{% endblock %}</title>
   <link href="{% static "css/blog.css" %}" rel="stylesheet">
 </head>
-<body>
+<body style="color:#000000; background-color:#d7fbff">
   <div id="content">
     {% block content %}
     {% endblock %}
   </div>
-  <div id="sidebar">
-    <h2>My blog</h2>
-    <p>This is my blog.</p>
+  <div id="sidebar" style="color:#000000; background-color:#7af2ff">
+    <h2><b>Синхронное плавание</b></h2>
+    <p><i>Это блог посвящен моему любимому виду спорт, синхронному плаванию</i></p>
+	<p><img src="{% static "img/01.jpg" %}" width="350" alt="Красивая картинка"></p>
   </div>
 </body>
 </html>

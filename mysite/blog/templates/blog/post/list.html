@@ -3,14 +3,14 @@
 {% block title %}О синхронном плавание{% endblock %}
 
 {% block content %}
-  <h1><b>О синхронном плавание</b></h1>
+  <h1><i><b>О синхронном плавание</b></i></h1>
   {% for post in posts %}
     <h2>
-      <a href="{% url 'blog:post_detail' post.id %}">
+      <a style="color:#1a288d" href="{% url 'blog:post_detail' post.id %}">
         {{ post.title }}
       </a>
     </h2>
-    <p class="date">
+    <p class="date" style="color:#0565f5">
       Published {{ post.publish }} by {{ post.author }}
     </p>
     {{ post.body|truncatewords:30|linebreaks }}
